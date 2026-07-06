@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Allkin&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0
+    ;
+}
+
+body {
+    /* background-color: black; */
+    font-family: "Space Mono", monospace;
+}
+
+header {
+    margin: 20px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+header h2 {
+    font-size: 18px;
+}
+
+#logo {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+main {
+    border: 1px black solid;
+    padding: 2rem;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+#sobre h2{
+    font-size: clamp(24px, 5vw, 48px);
+}
+
+#sobre p {
+    font-size: clamp(15px, 2vw, 25px);
+}
+
+.btn {
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: brown;
+}
+
