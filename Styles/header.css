@@ -1,0 +1,27 @@
+header {
+  margin: 20px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
+header h2 {
+  font-size: 13px;
+  color: var(--cor-secundaria);
+}
+
+#logo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}

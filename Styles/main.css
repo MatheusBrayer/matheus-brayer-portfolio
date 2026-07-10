@@ -1,0 +1,86 @@
+main {
+  padding: 2rem 2rem;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+#sobre h2 {
+  font-size: clamp(20px, 5vw, 48px);
+}
+
+#sobre p {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  margin: 10px 0px;
+  color: var(--cor-secundaria);
+}
+
+.accordion-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  margin: auto;
+
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  font-weight: bold;
+
+  background-color: var(--cor-primaria);
+  border: 1px solid var(--cor-fundo);
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.accordion:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.accordion:active {
+  transform: translateY(2);
+}
+
+.accordion-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.accordion p,
+.accordion span, .accordion-info {
+  color: var(--cor-fundo);
+  background-color: var(--cor-primaria);
+}
+
+.seta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+
+.accordion.active .seta {
+  transform: rotate(180deg);
+}
+
+
+

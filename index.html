@@ -1,70 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Matheus Brayer</title>
-    
-    <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
     <header>
-        <div>
-            <img id="logo" src="/matheus-brayer-portfolio/assets/img/character-archetype-the-hero.jpg" alt="Logo do Matheus Brayer">
-        </div>
-        <div>
-            <H1>Matheus Brayer</H1>
-            <h2>Desenvolvedor Full Stack </h2>
-        </div>
+      <div>
+        <img
+          id="logo"
+          src="/matheus-brayer-portfolio/Assets/img/foto.jpeg"
+          alt="Logo do Matheus Brayer"
+        />
+      </div>
+      <div>
+        <h1>Matheus Brayer</h1>
+        <h2>Desenvolvedor Full Stack</h2>
+      </div>
     </header>
-        
+
     <main>
-        <section id="sobre">
-            <h2>hellou, seja bem vindo!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Consequatur natus alias iste reprehenderit, 
-                ab et sit obcaecati assumenda repudiandae maxime earum modi, 
-                expedita rem voluptatibus error dolores, voluptatem neque molestias.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Consequatur natus alias iste reprehenderit, 
-                ab et sit obcaecati assumenda repudiandae maxime earum modi, 
-                expedita rem voluptatibus error dolores, voluptatem neque molestias.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Consequatur natus alias iste reprehenderit, 
-                ab et sit obcaecati assumenda repudiandae maxime earum modi, 
-                expedita rem voluptatibus error dolores, voluptatem neque molestias.
-            </p>
-        </section>
-        <nav>
-            <button class="btn">Sobre Mim</button>
-            <button class="btn">Soft Skills</button>
-            <button class="btn">Hard Skills</button>
-            <button class="btn">Projetos</button>
-        </nav>
+      <section id="sobre">
+        <h2>hellou, seja bem vindo!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          natus alias iste reprehenderit, ab et sit obcaecati assumenda
+          repudiandae maxime earum modi, expedita rem voluptatibus error
+          dolores, voluptatem neque molestias. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Consequatur natus alias iste
+          reprehenderit, ab et sit obcaecati assumenda repudiandae maxime earum
+          modi, expedita rem voluptatibus error dolores, voluptatem neque
+          molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Consequatur natus alias iste reprehenderit, ab et sit obcaecati
+          assumenda repudiandae maxime earum modi, expedita rem voluptatibus
+          error dolores, voluptatem neque molestias.
+        </p>
+      </section>
+      <nav class="accordion-container">
+        <button class="accordion" data-section="about">
+          <div class="accordion-info">
+            <span class="material-symbols-outlined"> person </span>
+            <p>Sobre Mim</p>
+          </div>
 
-        <div id="content-button"></div>
+          <span class="material-symbols-outlined seta">
+            keyboard_arrow_down
+          </span>
+        </button>
 
+        <button class="accordion" data-section="soft">
+          <div class="accordion-info">
+            <span class="material-symbols-outlined"> person_heart </span>
+            <p>Soft Skills</p>
+          </div>
+
+          <span class="material-symbols-outlined seta">
+            keyboard_arrow_down
+          </span>
+        </button>
+
+        <button class="accordion" data-section="hard">
+          <div class="accordion-info">
+            <span class="material-symbols-outlined"> neurology </span>
+            <p>Hard Skills</p>
+          </div>
+
+          <span class="material-symbols-outlined seta">
+            keyboard_arrow_down
+          </span>
+        </button>
+
+        <button class="accordion" data-section="projects">
+          <div class="accordion-info">
+            <span class="material-symbols-outlined"> code_blocks </span>
+            <p>Projetos</p>
+          </div>
+
+          <span class="material-symbols-outlined seta">
+            keyboard_arrow_down
+          </span>
+        </button>
+      </nav>
+
+      <div id="content-button"></div>
     </main>
 
     <footer>
-        <div>
-            <h2>CONTATOS</h2>
-            <ul id="contatos">
-                <li>
-                    <a href="#">Telefone</a>
-                </li>
-                <li>
-                    <a href="#">Email</a>
-                </li>
-                <li>
-                    <a href="#">Linkedin</a>
-                </li>
-                <li>
-                    <a href="#">GitHub</a>
-                </li>
-            </ul>
-        </div>
+      <div>
+        <h2>CONTATOS</h2>
+        <ul id="contatos">
+          <li>
+            <a href="#">Telefone</a>
+          </li>
+          <li>
+            <a href="#">Email</a>
+          </li>
+          <li>
+            <a href="#">Linkedin</a>
+          </li>
+          <li>
+            <a href="#">GitHub</a>
+          </li>
+        </ul>
+        <section id="content-button"></section>
+        <p>&copy; 2026 Matheus Brayer. Todos os direitos reservados.</p>
+      </div>
     </footer>
-</body>
+
+    <script src="./Scripts/main.js"></script>
+  </body>
 </html>

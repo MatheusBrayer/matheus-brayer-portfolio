@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: var(--cor-primaria);
+}
+
+body {
+  /* background-color: black; */
+  font-family: "Space Mono", monospace;
+}
