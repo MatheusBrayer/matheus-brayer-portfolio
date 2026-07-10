@@ -41,8 +41,8 @@ main {
   font-family: "Space Mono", monospace;
   font-size: 18px;
   font-weight: bold;
+  background-color: var(--cor-secundaria);
 
-  background-color: var(--cor-primaria);
   border: 1px solid var(--cor-fundo);
   border-radius: 8px;
 
@@ -51,12 +51,7 @@ main {
 }
 
 .accordion:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-}
-
-.accordion:active {
-  transform: translateY(2);
+  background-color: var(--cor-primaria);
 }
 
 .accordion-info {
@@ -68,18 +63,31 @@ main {
 .accordion p,
 .accordion span, .accordion-info {
   color: var(--cor-fundo);
-  background-color: var(--cor-primaria);
+  background-color: transparent;
 }
 
 .seta {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 .accordion.active .seta {
   transform: rotate(180deg);
+}
+
+.accordion.active {
+  transform: translateY(-5px);
+  background-color: var(--cor-primaria);
+  transition: 0.3s;
+}
+
+.accordion.active .accordion-info, 
+.accordion.active .accordion-info p, 
+.accordion.active span {
+  background-color: var(--cor-primaria);
+  transition: 0.3s;
 }
 
 
