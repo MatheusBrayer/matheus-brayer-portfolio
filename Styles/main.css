@@ -90,5 +90,17 @@ main {
   transition: 0.3s;
 }
 
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
 
+.content.active {
+  max-height: 300px;
+}
+
+.content.active p {
+  /* border: red 1px solid; */
+}
 
