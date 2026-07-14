@@ -1,11 +1,6 @@
-const accordions = document.querySelectorAll("[data-section]");
+import { initAccordion } from "./accordions.js";
+import "./accordions.js";
+import { renderProjects } from "./createCard.js";
 
-accordions.forEach((accordion) => {
-  accordion.addEventListener("click", () => {
-    accordion.classList.toggle("active");
-
-    const content =  accordion.nextElementSibling;
-    
-    content.classList.toggle("active");
-  });
-});
+initAccordion();
+renderProjects();
