@@ -97,11 +97,7 @@ main {
 }
 
 .content.active {
-  max-height: 300px;
-}
-
-.content.active p {
-  /* border: red 1px solid; */
+  max-height: 500px;
 }
 
 #projects-container {
@@ -119,12 +115,12 @@ main {
   position: relative;
   min-width: 250px;
   max-width: 250px;
-  height: 250px;
+  height: 300px;
   flex-shrink: 0;
 
   border-radius: var(--raio-borda);
 
-  background-color: green;
+  background-color: var(--cor-primaria);
 
   padding: 15px;
 }
@@ -138,6 +134,17 @@ main {
   align-items: center;
   text-transform: uppercase;
   font-size: 18px;
+  font-weight: bolder;
+}
+
+.card p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  margin: 15px 0 15px 0;
+}
+
+.card h3, .card p {
+  color: var(--cor-fundo);
 }
 
 .buttons {
@@ -156,7 +163,41 @@ main {
   width: 70px;
   font-size: 12px;
 
-  border: 1px solid green;
+  border: 1px solid grey;
   background-color: grey;
     color: white
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.tech-tag {
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  border: 1px solid var(--cor-secundaria);
+  padding: 3px 5px;
+  border-radius: var(--raio-borda);
+  font-size: 0.7rem;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+}
+
+#btn-git {
+  background-color: black;
+}
+
+#btn-deploy {
+  background-color: blue;
+}
+
+#btn-doc {
+  background-color: orange;
 }

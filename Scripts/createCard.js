@@ -23,26 +23,28 @@ card.innerHTML = `
             ${repo.description ?? "Sem descrição"}
         </p>
 
-        <div>
-            ${(extra.technologies || []).join(" • ")}
+        <div class="technologies">
+            ${extra.technologies
+            .map(tech => `<span class="tech-tag">${tech}</span>`)
+            .join("")}
         </div>
 
         <div class="buttons">
 
             <a href="${repo.html_url}" target="_blank">
-                <button>GITHUB</button>
+                <button id="btn-git">GITHUB</button>
             </a>
 
             ${extra.deploy ? 
                 `<a href="${extra.deploy}" target="_blank">
-                    <button>DEPLOY</button>
+                    <button id="btn-deploy">DEPLOY</button>
                 </a>`
                 : ''
             }
 
             ${extra.docs ? 
                 `<a href="${extra.docs}" target="_blank">
-                    <button>DOC</button>
+                    <button id="btn-doc">DOC</button>
                 </a>`
                 : ''
             }

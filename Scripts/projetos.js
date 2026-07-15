@@ -1,5 +1,5 @@
 export const projectsData = {
-  "payment-challenge-api": {
+  "desafio-tecnico": {
     docs: "https://documenter.getpostman.com/view/46945043/2sBXwyG7FW",
     technologies: [
       "Node.js",
