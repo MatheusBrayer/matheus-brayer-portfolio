@@ -1,30 +1,30 @@
 export const softSkills = {
-  resolucaoDeProblemas: [
+  resolucao_De_Problemas: [
     "Resolução de Problemas Complexos",
     "Pensamento Analítico",
     "Análise Técnica",
     "Tomada de Decisão"
   ],
-  comunicacaoEColaboracao: [
+  comunicacao_E_Colaboracao: [
     "Comunicação",
     "Trabalho em Equipe",
     "Compartilhamento de Conhecimento",
     "Colaboração Multidisciplinar"
   ],
-  organizacaoEGestao: [
+  organizacao_E_Gestao: [
     "Organização",
     "Gestão de Prioridades",
     "Gestão de Tempo",
     "Foco em Resultados"
   ],
-  perfilProfissional: [
+  perfil_Profissional: [
     "Pensamento Lógico",
     "Proatividade",
     "Aprendizado Contínuo",
     "Adaptabilidade",
     "Atenção aos Detalhes"
   ],
-  melhoriaContinua: [
+  melhoria_Continua: [
     "Otimização de Processos",
     "Foco em Performance",
     "Melhoria Contínua",

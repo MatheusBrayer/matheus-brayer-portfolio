@@ -20,14 +20,14 @@ export const hardSkills = {
     "Middlewares",
     "Integração de Sistemas"
   ],
-  bancosDeDados: [
+  bancos_de_Dados: [
     "PostgreSQL",
     "MongoDB",
     "SQLite",
     "SQL",
     "JPA/Hibernate"
   ],
-  testesEQualidade: [
+  testes_e_Qualidade: [
     "Jest",
     "React Testing Library",
     "Testes Unitários",
@@ -40,7 +40,7 @@ export const hardSkills = {
     "Validação de Dados",
     "Consultas Parametrizadas"
   ],
-  ferramentasEDevOps: [
+  ferramentas_e_DevOps: [
     "Git",
     "GitHub",
     "Git Flow",

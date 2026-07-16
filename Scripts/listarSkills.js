@@ -1,17 +1,20 @@
-export function listarSkills(skills, container) {
-  for (const [categoria, itens] of Object.entries(skills)) {
-    const titulo = document.createElement("h3");
-    titulo.textContent = categoria;
+export function listarSkills (objSkills, container) {
 
-    const lista = document.createElement("ul");
+  for (const [titulo, skills] of Object.entries(objSkills)) {
 
-    for (const item of itens) {
-      const li = document.createElement("li");
-      li.textContent = item;
-      lista.appendChild(li);
-    }
+    const cardSkills = document.createElement("div")
+    cardSkills.className = "elemento";
 
-    container.appendChild(titulo);
-    container.appendChild(lista);
+    cardSkills.innerHTML = `
+      <h3> ${titulo.replaceAll("_"," ")} </h3>
+
+      <ul>
+        ${skills.map(skill => `<li>${skill}</li>`).join("")}
+      </ul>
+    `
+
+    container.appendChild(cardSkills);
+
   }
+    
 }
