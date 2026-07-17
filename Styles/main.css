@@ -20,6 +20,10 @@ main {
   color: var(--cor-secundaria);
 }
 
+#sobre-mim {
+  line-height: 1.8;
+}
+
 .accordion-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -115,6 +119,23 @@ main {
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 1rem;
+  padding: 0px 60px;
+
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 60px,
+      black calc(100% - 40px),
+      transparent
+  );
+
+  -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 60px,
+      black calc(100% - 40px),
+      transparent
+  );
 }
 
 #projects-container::-webkit-scrollbar {

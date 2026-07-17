@@ -1,0 +1,21 @@
+export const sobreMim = `
+Minha relação com tecnologia começou muito antes de eu ingressar na faculdade de Engenharia de Software. Sempre tive curiosidade em entender como as coisas funcionam, buscar soluções para problemas e encontrar maneiras mais eficientes de executar tarefas. Essa característica me acompanhou ao longo da minha trajetória profissional e acabou sendo um dos principais motivos que me aproximaram da programação.
+
+Atualmente trabalho na Vulcabras, atuando com programação e automação industrial. No dia a dia, participo do desenvolvimento de soluções que auxiliam processos produtivos, análise de dados e melhorias operacionais. Trabalhar diretamente com problemas reais me ensinou a enxergar a tecnologia não apenas como uma ferramenta técnica, mas como um meio de gerar resultados concretos para pessoas e empresas.
+
+Foi nesse ambiente que meu interesse pelo desenvolvimento de software começou a crescer. A vontade de criar sistemas, aplicações e soluções mais completas me levou a aprofundar os estudos em programação de forma constante. O que inicialmente era apenas curiosidade se transformou em uma paixão e, posteriormente, em um objetivo profissional.
+
+Atualmente curso Engenharia de Software e também participo de formações especializadas em desenvolvimento Full Stack. Grande parte do meu tempo livre é dedicada ao aprendizado contínuo, seja estudando novas tecnologias, desenvolvendo projetos pessoais ou explorando boas práticas de arquitetura e engenharia de software. Acredito que a evolução constante é uma das características mais importantes para qualquer profissional da área de tecnologia.
+
+Ao longo dessa jornada, encontrei maior afinidade com o ecossistema JavaScript e TypeScript. No Frontend, gosto de trabalhar com React, criando interfaces modernas, responsivas e focadas na experiência do usuário. No Backend, utilizo Node.js e Express para construção de APIs REST, integrações e aplicações escaláveis. Também venho expandindo meus conhecimentos em Java e Spring Boot, buscando compreender diferentes abordagens e arquiteturas utilizadas no mercado.
+
+Tenho um perfil muito voltado para a prática. Por isso, gosto de aprender construindo projetos reais. Muitos dos conhecimentos que adquiri nos estudos foram aplicados diretamente em aplicações publicadas, APIs documentadas e sistemas completos que desenvolvi para consolidar conceitos e enfrentar desafios semelhantes aos encontrados em ambientes profissionais.
+
+Me interesso especialmente por temas como arquitetura de software, bancos de dados, autenticação e segurança, testes automatizados, computação em nuvem e boas práticas de desenvolvimento. São áreas que considero fundamentais para construir aplicações confiáveis, escaláveis e fáceis de manter a longo prazo.
+
+Além da programação, carrego comigo experiências adquiridas ao longo da minha atuação profissional que considero diferenciais importantes. O contato constante com automação, análise de processos e resolução de problemas complexos desenvolveu habilidades como pensamento lógico, visão analítica, organização e capacidade de adaptação. Essas competências acabam refletindo diretamente na forma como estruturo minhas soluções e enfrento novos desafios.
+
+Quando não estou estudando ou desenvolvendo projetos, geralmente estou buscando novas referências, acompanhando tendências do mercado ou explorando tecnologias que possam ampliar minha visão sobre o desenvolvimento de software. Gosto da ideia de estar sempre aprendendo algo novo e acredito que essa curiosidade é uma das principais forças que impulsionam minha evolução profissional.
+
+Hoje me vejo em uma jornada de construção contínua. Cada projeto desenvolvido, cada tecnologia estudada e cada desafio superado representa mais um passo na minha formação como desenvolvedor. Meu objetivo é continuar crescendo tecnicamente, contribuir com projetos que gerem valor real e me tornar um profissional cada vez mais completo, capaz de transformar ideias em soluções eficientes e de impacto.
+`;

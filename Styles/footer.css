@@ -60,6 +60,17 @@ footer p {
   transform: scale(1.1);
 }
 
+.legenda {
+  font-size: 15px;
+  padding-top: 10px;
+  }
+
+  #contatos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 @media (min-width: 769px) {
 
     #logo-whats img {
@@ -87,4 +98,15 @@ footer p {
     right: 150px;
   }
 
+  .legenda {
+  opacity: 0;
+  padding-top: 10px;
+  transition: 0.3s ease;
+  }
+
+  a:hover + .legenda {
+    opacity: 1;
+  }
+
 }
+

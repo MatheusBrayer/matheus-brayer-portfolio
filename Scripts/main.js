@@ -5,6 +5,8 @@ import { hardSkills } from "./hardskills.js";
 import { softSkills } from "./softSkills.js";
 import { listarSkills } from "./listarSkills.js";
 import { iniciarCarrossel } from "./btnNavegacao.js";
+import { sobreMim } from "./sobreMim.js";
+import { inserirTexto } from "./InserirSobreMim.js";
 
 initAccordion();
 renderProjects();
@@ -15,3 +17,5 @@ const hardContainer = document.querySelector("#hard-skills");
 listarSkills(hardSkills, hardContainer);
 listarSkills(softSkills, softContainer);
 iniciarCarrossel();
+
+inserirTexto("sobre-mim", sobreMim);
