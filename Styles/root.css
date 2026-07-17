@@ -1,7 +1,7 @@
 :root {
-  --cor-primaria: #FFFF;
-  --cor-secundaria: rgb(170, 170, 170);
-  --cor-fundo: black;
-  --cor-desabilitado: rgb(197, 197, 197);
+  --cor-primaria: #e99211;
+  --cor-secundaria: #ffffffef;
+  --cor-fundo: rgb(0, 0, 85);
   --raio-borda: 8px;
+  --cor-card: rgba(0, 0, 255, 0.158);
 }

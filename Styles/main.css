@@ -54,6 +54,11 @@ main {
   background-color: var(--cor-primaria);
 }
 
+.accordion:hover p, 
+.accordion:hover span {
+  color: var(--cor-secundaria);
+}
+
 .accordion-info {
   display: flex;
   align-items: center;
@@ -61,7 +66,8 @@ main {
 }
 
 .accordion p,
-.accordion span, .accordion-info {
+.accordion span, 
+.accordion-info {
   color: var(--cor-fundo);
   background-color: transparent;
 }
@@ -86,8 +92,8 @@ main {
 .accordion.active .accordion-info, 
 .accordion.active .accordion-info p, 
 .accordion.active span {
-  background-color: var(--cor-primaria);
-  transition: 0.5s;
+  color: var(--cor-secundaria);
+  transition: .5s;
 }
 
 .content {
@@ -98,6 +104,10 @@ main {
 
 .content.active {
   max-height: 1000px;
+}
+
+.content p {
+  color: var(--cor-secundaria);
 }
 
 #projects-container {
@@ -120,7 +130,7 @@ main {
 
   border-radius: var(--raio-borda);
 
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-card);
 
   padding: 15px;
 }
@@ -130,6 +140,7 @@ main {
 }
 
 .card h3 {
+  color: var(--cor-primaria);
   text-align: center;
   align-items: center;
   text-transform: uppercase;
@@ -140,10 +151,8 @@ main {
 .card p {
   font-size: 15px;
   margin: 15px 0 15px 0;
-}
-
-.card h3, .card p {
-  color: var(--cor-fundo);
+  line-height: 1.5;
+  color: var(--cor-secundaria);
 }
 
 .buttons {
@@ -175,9 +184,9 @@ main {
 }
 
 .tech-tag {
-  background: var(--cor-secundaria);
-  color: var(--cor-primaria);
-  border: 1px solid var(--cor-secundaria);
+  background: var(--cor-fundo);
+  color: orange;
+  border: 1px solid transparent;
   padding: 3px 5px;
   border-radius: var(--raio-borda);
   font-size: 0.7rem;
@@ -189,19 +198,29 @@ main {
   transform: translateY(-2px);
 }
 
+#btn-git, #btn-deploy, #btn-doc {
+  font-weight: bold;
+  cursor: pointer;
+  border-color: transparent;
+  transition: all .3s ease;
+}
+
+#btn-git:hover , 
+#btn-deploy:hover , 
+#btn-doc:hover {
+  transform: translateY(-2px);
+}
+
 #btn-git {
   background-color: black;
-  cursor: pointer;
 }
 
 #btn-deploy {
   background-color: blue;
-  cursor: pointer;
 }
 
 #btn-doc {
-  background-color: orange;
-  cursor: pointer;
+  background-color: var(--cor-primaria);
 }
 
 .lista-cards {
@@ -217,7 +236,7 @@ main {
 }
 
 .elemento {
-  border: 1px solid white;
+  border-color: transparent;
   display: block;
   flex-direction: row;
   min-width: 250px;
@@ -227,17 +246,19 @@ main {
 
   border-radius: var(--raio-borda);
 
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-card);
 
   padding: 15px;
 }
 
-.elemento h3, .elemento ul, .elemento li {
+.elemento ul, .elemento li {
   background-color: transparent;
-  color: var(--cor-fundo);
+  color: var(--cor-secundaria);
 }
 
 .elemento h3 {
+  background-color: transparent;
+  color: var(--cor-primaria);
   display: flex;
   text-transform: uppercase;
   align-items: center;
