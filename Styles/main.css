@@ -192,6 +192,7 @@ main {
   font-size: 0.7rem;
   font-weight: 600;
   transition: all .2s ease;
+  cursor: default;
 }
 
 .tech-tag:hover {
@@ -229,7 +230,25 @@ main {
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 300px;
+  padding: 0px 60px;
+
+  mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 60px,
+      black calc(100% - 40px),
+      transparent
+  );
+
+  -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 60px,
+      black calc(100% - 40px),
+      transparent
+  );
 }
+
 
 .lista-cards::-webkit-scrollbar {
   display: none;
@@ -271,4 +290,50 @@ main {
   list-style: none;
   line-height: 1.4;
 }
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-nav {
+    display: none;
+}
+
+
+@media (min-width: 1024px) {
+
+    .btn-nav {
+        display: flex;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 50px;
+        height: 50px;
+
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        z-index: 10;
+    }
+
+    .btn-prev {
+        left: 10px;
+    }
+
+    .btn-next {
+        right: 10px;
+    }
+
+}
+
 
