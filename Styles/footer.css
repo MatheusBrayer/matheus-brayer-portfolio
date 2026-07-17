@@ -2,7 +2,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px 0;
 }
 
 footer h2 {
@@ -58,4 +58,33 @@ footer p {
 
 #logo-whats img:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 769px) {
+
+    #logo-whats img {
+    width: 50px;
+    height: 50px;
+
+    bottom: 50px;
+    right: 50px;
+  }
+
+  footer ul{
+    padding: 20px 0 100px 0;
+    gap: 50px;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  #logo-whats img {
+    width: 60px;
+    height: 60px;
+
+    bottom: 150px;
+    right: 150px;
+  }
+
 }
