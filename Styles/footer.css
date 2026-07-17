@@ -1,6 +1,5 @@
 footer {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
@@ -8,21 +7,32 @@ footer {
 
 footer h2 {
   text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: clamp(20px, 4vw, 30px);
 }
 
 footer ul {
   list-style: none;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 30px;
   padding-bottom: 10px;
 }
 
-footer a {
-  text-decoration: none;
-  color: azure;
+#contatos {
+  margin: 25px;
+}
+
+#contatos img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+#contatos img:hover {
+  transform: scale(1.1);
 }
 
 footer p {
@@ -31,4 +41,21 @@ footer p {
   font-size: 8px;
   color: rgb(158, 158, 158);
   padding-bottom: 8px;
+}
+
+#logo-whats img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  background: transparent;
+}
+
+#logo-whats img:hover {
+  transform: scale(1.1);
 }
