@@ -13,7 +13,7 @@ main {
 }
 
 #sobre p {
-  font-family: "Roboto", sans-serif;
+  font-size: clamp(17px, 1.5vw, 21px);
   text-align: left;
   line-height: 1.7;
   margin: 10px 0px;
@@ -22,6 +22,7 @@ main {
 
 #sobre-mim {
   line-height: 1.8;
+  font-size: clamp(17px, 1.5vw, 21px);
 }
 
 .accordion-container {
