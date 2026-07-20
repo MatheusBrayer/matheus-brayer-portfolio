@@ -1,5 +1,5 @@
 import './buscarRepositorio';
-import './projetos';
+import '../data/projetos';
 
 function createCard(repo) {
   const extraData = projectsData[repo.name];

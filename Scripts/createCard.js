@@ -1,5 +1,5 @@
 import { getGithubRepositories } from "./buscarRepositorio.js";
-import { projectsData } from "./projetos.js";
+import { projectsData } from "../data/projetos.js";
 
 export async function renderProjects() {
   const container = document.querySelector(

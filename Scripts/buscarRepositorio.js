@@ -1,4 +1,4 @@
-import { projectsData } from "./projetos.js";
+import { projectsData } from "../data/projetos.js";
 
 export async function getGithubRepositories() {
   const response = await fetch(
