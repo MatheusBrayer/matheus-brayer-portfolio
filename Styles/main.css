@@ -9,7 +9,7 @@ main {
 }
 
 #sobre h2 {
-  font-size: clamp(25px, 4vw, 35px);
+  font-size: clamp(23px, 4vw, 30px);
 }
 
 #sobre p {
@@ -368,8 +368,7 @@ main {
 
 #form-contato h2{
     text-align: center;
-    font-family: "Space Mono", monospace;
-    font-size: clamp(20px, 4vw, 30px);
+    font-size: clamp(23px, 4vw, 30px);
     text-transform: uppercase;
 }
 
@@ -384,12 +383,18 @@ main {
 
 #form-contato input, #form-contato textarea {
   border-radius: var(--raio-borda);
-  background-color: var(--cor-secundaria);
-  border: 1px solid black;
+  background-color: var(--cor-card);
+  border: transparent;
   padding: 15px;
-  color: black;
+  color: white;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+
+#form-contato input:-webkit-autofill,
+#form-contato textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #000070 inset;
+  -webkit-text-fill-color: white;
 }
 
 #form-contato input::placeholder,
@@ -400,9 +405,9 @@ main {
 
 #form-contato input:focus,
 #form-contato textarea:focus {
-  border: 2px solid #4f46e5;
+  /* border: 2px solid #4f46e5; */
   outline: none;
-  box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+  /* box-shadow: 0 0 10px rgba(79, 70, 229, 0.3); */
 }
 
 #form-contato p {

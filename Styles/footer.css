@@ -7,8 +7,7 @@ footer {
 
 footer h2 {
   text-align: center;
-  font-family: "Space Mono", monospace;
-  font-size: clamp(20px, 4vw, 30px);
+  font-size: clamp(23px, 4vw, 30px);
 }
 
 footer ul {
@@ -36,7 +35,6 @@ footer ul {
 }
 
 footer p {
-  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 8px;
   color: rgb(158, 158, 158);
