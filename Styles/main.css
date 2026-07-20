@@ -362,7 +362,6 @@ main {
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  max-width: 500px;
   padding-top: 80px;
 }
 
