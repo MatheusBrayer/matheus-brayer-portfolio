@@ -7,6 +7,8 @@ import { listarSkills } from "./listarSkills.js";
 import { iniciarCarrossel } from "./btnNavegacao.js";
 import { sobreMim } from "../data/sobreMim.js";
 import { inserirTexto } from "./InserirSobreMim.js";
+import { initEmail } from "./contatoEmail.js";
+import { initWhatsApp } from "./contatoWhats.js";
 
 initAccordion();
 renderProjects();
@@ -19,3 +21,6 @@ listarSkills(softSkills, softContainer);
 iniciarCarrossel();
 
 inserirTexto("sobre-mim", sobreMim);
+
+initEmail();
+initWhatsApp();

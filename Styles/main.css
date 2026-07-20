@@ -357,4 +357,81 @@ main {
 
 }
 
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  padding-top: 80px;
+}
 
+#form-contato h2{
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    font-size: clamp(20px, 4vw, 30px);
+    text-transform: uppercase;
+}
+
+#form-contato label {
+  font-size: clamp(18px, 3vw, 22px);
+  font-weight: bold;
+}
+
+#form-contato textarea {
+  height: 150px;
+}
+
+#form-contato input, #form-contato textarea {
+  border-radius: var(--raio-borda);
+  background-color: var(--cor-secundaria);
+  border: 1px solid black;
+  padding: 15px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+#form-contato input::placeholder,
+#form-contato textarea::placeholder {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-contato input:focus,
+#form-contato textarea:focus {
+  border: 2px solid #4f46e5;
+  outline: none;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+}
+
+#form-contato p {
+  text-align: center;
+  justify-content: center;
+  color: var(--cor-secundaria);
+}
+
+#btn-form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+#btn-form button {
+  border-radius: var(--raio-borda);
+  padding: 10px;
+  background: var(--cor-secundaria);
+  color: black;
+  font-size: clamp(10px, 4vw, 15px);
+  font-weight: bold;
+  width: 120px;
+  border: transparent;
+  transition: 0.5s ease;
+}
+
+#btn-form button:hover {
+  transform: translateY(-2px);
+  background: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
